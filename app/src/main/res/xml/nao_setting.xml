@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+            android:dialogTitle="请输入IP地址"
+            android:key="ip_preference"
+            android:defaultValue="255.255.255.255"
+            android:summary="默认值：255.255.255.255 "
+            android:title="NAO IP" />
+    <EditTextPreference
+            android:dialogTitle="请输入端口地址"
+            android:key="port_preference"
+            android:defaultValue="10024"
+            android:summary="默认值：10024 "
+            android:title="NAO PORT" />
+    <EditTextPreference
+            android:dialogTitle="请输入速度(0-100)"
+            android:key="speed_preference"
+            android:defaultValue="50"
+            android:summary="默认值：50 "
+            android:title="NAO SPEED" />
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人说的话"
+            android:key="nao_say_1"
+            android:defaultValue="@string/robotSayBtn1"
+            android:summary="默认值：你好 "
+            android:title="NAO SAY ONE"/>
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人说的话"
+            android:key="nao_say_2"
+            android:defaultValue="@string/robotSayBtn2"
+            android:summary="默认值：今天天气不错! "
+            android:title="NAO SAY TWO"/>
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人说的话"
+            android:key="nao_say_3"
+            android:defaultValue="@string/robotSayBtn3"
+            android:summary="默认值：来和我聊天吧 "
+            android:title="NAO SAT THREE"/>
+
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人回答的话"
+            android:key="nao_answer_1"
+            android:defaultValue="@string/robotAnswerBtn1"
+            android:summary="默认值：你好，你叫什么名字 "
+            android:title="NAO ANSWER ONE"/>
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人回答的话"
+            android:key="nao_answer_2"
+            android:defaultValue="@string/robotAnswerBtn2"
+            android:summary="默认值：你多大了? "
+            android:title="NAO ANSWER TWO"/>
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人回答的话"
+            android:key="nao_answer_3"
+            android:defaultValue="@string/robotAnswerBtn3"
+            android:summary="默认值：你来自哪里？"
+            android:title="NAO ANSWER THREE"/>
+
+</PreferenceScreen>

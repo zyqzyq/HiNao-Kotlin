@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="move_button_size">96dp</dimen>
+    <dimen name="sayTextSize">24sp</dimen>
+    <dimen name="ic_size">48dp</dimen>
+    <dimen name="my_space_size">36dp</dimen>
+    <dimen name="BtnPadding">5dp</dimen>
+    <dimen name="BtnTextSize">24sp</dimen>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                    android:text="@string/robotSayTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/sayTextSize"
+                    android:id="@+id/textView"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/robotSayText"
+                    android:hint="@string/defaultRobotSayText"/>
+            <Button
+                    android:text="@string/robotSayTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/robotSayBtn"
+                    style="@style/button_style"/>
+        </LinearLayout>
+        <Button
+                android:text="@string/robotSayBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/robotSayBtn1"
+                style="@style/button_style"/>
+        <Button
+                android:text="@string/robotSayBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/robotSayBtn2"
+                style="@style/button_style"/>
+        <Button
+                android:text="@string/robotSayBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/robotSayBtn3"
+                style="@style/button_style"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="@string/robotAnswerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sayTextSize"
+                    android:gravity="center"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:id="@+id/robotAnswerText"
+                        android:hint="@string/defaultRobotAnswerText"/>
+                <Button
+                        android:text="@string/robotAnswerTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/robotAnswerBtn"
+                        style="@style/button_style"/>
+            </LinearLayout>
+            <Button
+                    android:text="@string/robotAnswerBtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/robotAnswerBtn1"
+                    style="@style/button_style"/>
+            <Button
+                    android:text="@string/robotAnswerBtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/robotAnswerBtn2"
+                    style="@style/button_style"/>
+            <Button
+                    android:text="@string/robotAnswerBtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/robotAnswerBtn3"
+                    style="@style/button_style"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:text="@string/speechTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sayTextSize"
+            android:gravity="center"/>
+    <Button
+            android:id="@+id/startChatting"
+            android:text="@string/startSpeech"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            style="@style/button_style"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Hi Nao</string>
+    <!--test app_id-->
+    <string name="app_id">599d230e</string>
+
+    <!--bottom menu string-->
+    <string name="title_move">移动</string>
+    <string name="title_say">对话</string>
+    <string name="title_behaviorlist">程序列表</string>
+    <string name="title_my">我的</string>
+
+    <!--移动界面 快捷按键-->
+    <string name="quickBtn1">小苹果</string>
+    <string name="quickBtn2">骑马舞</string>
+    <string name="quickBtn3">摇摆舞</string>
+    <string name="quickBtn4">生日歌</string>
+    <string name="quickBtn5">中国舞</string>
+    <string name="quickBtn6">唱歌</string>
+    <string name="quickBtn7">跳舞</string>
+    <string name="quickBtn8">站起来</string>
+    <string name="quickBtn9">蹲下</string>
+
+    <!--对话界面-->
+
+    <string name="robotSayTextView">机器人发声</string>
+    <string name="defaultRobotSayText">请在此输入想要机器人说的话</string>
+    <string name="robotSayBtn1">你好，欢迎光临</string>
+    <string name="robotSayBtn2">今天天气不错！</string>
+    <string name="robotSayBtn3">来和我聊天吧</string>
+
+    <string name="robotAnswerTextView">机器人问答</string>
+    <string name="defaultRobotAnswerText">请在此输入想对机器人说的话</string>
+    <string name="robotAnswerBtn1">你好，你叫什么名字</string>
+    <string name="robotAnswerBtn2">你多大了?</string>
+    <string name="robotAnswerBtn3">你来自哪里？</string>
+    <string name="speechTextView">和机器人互动聊天</string>
+    <string name="startSpeech">点击进行互动</string>
+
+    <!--应用程序界面-->
+    <string name="searchBehaviorBtn">点击刷新机器人程序列表</string>
+
+    <!--我的界面-->
+    <string name="aboutText">关于</string>
+    <string name="downloadText">下载地址</string>
+    <string name="infoText">NAO简介</string>
+    <string name="aboutusInfoText">有什么建议或者意见可以发邮件到邮箱497533265@qq.com</string>
+    <string name="downloadInfoText">Nao端程序下载地址：https://github.com/zyqzyq/HiNaoServer(简略版)</string>
+    <string name="naoInfoText">NAO机器人是一款人工智能机器人。它拥有着讨人喜欢的外形，而且具备有一定水平的人工智能，能够与人亲切的互动。</string>
+
+    <!--聊天界面-->
+    <string name="startUnderstander">点击说话</string>
+    <string name="title_activity_nao_chat_setting">Settings</string>
+    <string formatted="false" name="tts_toast_format">缓冲进度为%d%%，播放进度为%d%%</string>
+    <string name="xunfeibiaoshi">"语音技术由科大讯飞提供"</string>
+</resources>

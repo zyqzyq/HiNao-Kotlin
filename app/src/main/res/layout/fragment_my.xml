@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:showDividers="middle">
+    <LinearLayout
+            android:id="@+id/downloadLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_centerInParent="true">
+        <ImageView
+                android:layout_width="@dimen/ic_size"
+                android:layout_height="@dimen/ic_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_download" tools:ignore="ContentDescription"/>
+        <Button
+                android:id="@+id/downloadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/downloadText"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sayTextSize"
+                android:layout_weight="1"
+                style="@style/button2_style" tools:ignore="InefficientWeight"/>
+        <ImageView android:layout_width="@dimen/ic_size"
+                   android:layout_height="@dimen/ic_size"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/ic_start" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+    <View android:id="@+id/fengexian1"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/my_space_size"
+          android:layout_above="@id/downloadLayout"/>
+
+    <View android:id="@+id/fengexian2"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/my_space_size"
+          android:layout_below="@id/downloadLayout"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_above="@id/fengexian1">
+        <ImageView
+                android:layout_width="@dimen/ic_size"
+                android:layout_height="@dimen/ic_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_info" tools:ignore="ContentDescription"/>
+        <Button
+                android:id="@+id/naoInfoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/infoText"
+                android:gravity="center"
+                android:textSize="@dimen/sayTextSize"
+                android:layout_weight="1"
+                style="@style/button2_style" tools:ignore="InefficientWeight"/>
+        <ImageView android:layout_width="@dimen/ic_size"
+                   android:layout_height="@dimen/ic_size"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/ic_start" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_below="@id/fengexian2">
+        <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_about" tools:ignore="ContentDescription"/>
+        <Button
+                android:id="@+id/aboutusBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutText"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sayTextSize"
+                android:layout_weight="1"
+                style="@style/button2_style" tools:ignore="InefficientWeight"/>
+        <ImageView android:layout_width="@dimen/ic_size"
+                   android:layout_height="@dimen/ic_size"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/ic_start" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</RelativeLayout>
