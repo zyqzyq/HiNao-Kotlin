@@ -7,8 +7,8 @@ XXXXXXX
     通过无线控制NAO机器人说话，走路，跳舞等。
 
 ##下载地址
-    APP:暂未上架
-    NAOServer:暂未上传
+    APP:酷安市场  
+    NAOServer:https://github.com/zyqzyq/HiNaoServer
     
 ##版本更新
 ####1.0.0
