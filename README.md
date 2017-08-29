@@ -9,7 +9,15 @@
 ## 下载地址
     APP:   酷安市场搜索HiNao
     NAOServer:https://github.com/zyqzyq/HiNaoServer
-    
+    
+## ScreenShot
+![](http://upload-images.jianshu.io/upload_images/7646499-0d7739245e239a0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](http://upload-images.jianshu.io/upload_images/7646499-2d7f237cc8e74d1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](http://upload-images.jianshu.io/upload_images/7646499-ccff6e3670e1d58c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](http://upload-images.jianshu.io/upload_images/7646499-af9b121e4f54b645.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## 版本更新
 #### 1.0.1
     1.增加IP,PORT设置选项
