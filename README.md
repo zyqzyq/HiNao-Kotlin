@@ -8,7 +8,7 @@
 
 ## 下载地址
     APP:   酷安市场搜索HiNao
-    NAOServer:https://github.com/zyqzyq/HiNaoServer
+    NAOServer:https://github.com/zyqzyq/HiNaoServer
     
 ## 版本更新
 #### 1.0.1
