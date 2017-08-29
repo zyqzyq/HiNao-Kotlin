@@ -1,22 +1,22 @@
-#Hi NAO:Android APP with Kotlin
+# Hi NAO:Android APP with Kotlin
 
-##示例
+## 示例
     XXXXXXX
 
-##功能
+## 功能
     通过无线控制NAO机器人说话，走路，跳舞等。
 
-##下载地址
+## 下载地址
     APP:酷安市场
     NAOServer:https://github.com/zyqzyq/HiNaoServer
     
-##版本更新
-####1.0.1
+## 版本更新
+#### 1.0.1
     1.增加IP,PORT设置选项
     2.增加本地语音合成设置选项
     3.增加对话本地播放选项
     4.优化对话页面，删除了answer功能
-####1.0.0
+#### 1.0.0
     1.方向键实现移动控制
     2.按钮控制快速run behavior
     3.控制NAO端说出输入文本内容
@@ -25,7 +25,7 @@
     6.实现多台机器人同时控制
     7.实现语音对话功能
     
-##TODO
+## TODO
     1.实现遥杆控制功能并且速度可调节
     2.实现机器人搜索功能，增加机器人单台控制
     3.实现多语言支持
