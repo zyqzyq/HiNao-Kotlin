@@ -1,7 +1,7 @@
 #Hi NAO:Android APP with Kotlin
 
 ##示例
-XXXXXXX
+    XXXXXXX
 
 ##功能
     通过无线控制NAO机器人说话，走路，跳舞等。
