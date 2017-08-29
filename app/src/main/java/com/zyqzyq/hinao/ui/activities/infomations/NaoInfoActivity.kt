@@ -17,7 +17,7 @@ class NaoInfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nao_info)
-        toolbarText.text = getString(R.string.infoText)
+        toolbarTitle.text = getString(R.string.infoText)
     }
 
 

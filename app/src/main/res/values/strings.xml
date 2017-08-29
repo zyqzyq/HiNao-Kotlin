@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Hi Nao</string>
-    <!--test app_id-->
     <string name="app_id">599d230e</string>
 
     <!--bottom menu string-->
@@ -24,15 +23,14 @@
 
     <string name="robotSayTextView">机器人发声</string>
     <string name="defaultRobotSayText">请在此输入想要机器人说的话</string>
+    <string name="robotSayBtn">发送</string>
     <string name="robotSayBtn1">你好，欢迎光临</string>
     <string name="robotSayBtn2">今天天气不错！</string>
     <string name="robotSayBtn3">来和我聊天吧</string>
+    <string name="robotSayBtn4">你好，你叫什么名字</string>
+    <string name="robotSayBtn5">你多大了?</string>
+    <string name="robotSayBtn6">你来自哪里？</string>
 
-    <string name="robotAnswerTextView">机器人问答</string>
-    <string name="defaultRobotAnswerText">请在此输入想对机器人说的话</string>
-    <string name="robotAnswerBtn1">你好，你叫什么名字</string>
-    <string name="robotAnswerBtn2">你多大了?</string>
-    <string name="robotAnswerBtn3">你来自哪里？</string>
     <string name="speechTextView">和机器人互动聊天</string>
     <string name="startSpeech">点击进行互动</string>
 
@@ -52,4 +50,45 @@
     <string name="title_activity_nao_chat_setting">Settings</string>
     <string formatted="false" name="tts_toast_format">缓冲进度为%d%%，播放进度为%d%%</string>
     <string name="xunfeibiaoshi">"语音技术由科大讯飞提供"</string>
+    <string name="chattingTitle">正在与机器人聊天中……</string>
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>凯瑟琳—女青、英</item>
+        <item>亨利—男青、英</item>
+        <item>玛丽—女青、英</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
 </resources>

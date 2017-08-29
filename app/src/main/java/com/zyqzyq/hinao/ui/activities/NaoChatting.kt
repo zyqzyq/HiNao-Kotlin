@@ -2,6 +2,8 @@ package com.zyqzyq.hinao.ui.activities
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Environment
 import android.support.v7.widget.LinearLayoutManager
@@ -25,6 +27,11 @@ import com.iflytek.aiui.AIUIMessage
 import java.io.IOException
 import com.iflytek.aiui.AIUIListener
 import com.zyqzyq.hinao.data.UnderstandData
+import com.zyqzyq.hinao.data.startSay
+import com.zyqzyq.hinao.data.startSayLocal
+import com.zyqzyq.hinao.ui.activities.settings.ChatSetting
+import kotlinx.android.synthetic.main.toolbar.*
+import org.jetbrains.anko.startActivity
 
 
 class NaoChatting : Activity(), OnClickListener {
@@ -43,6 +50,7 @@ class NaoChatting : Activity(), OnClickListener {
     private var mToast: Toast? = null
     private var chatDataList: ArrayList<chatModel>? = ArrayList()
 
+    private var mSharedPreferences : SharedPreferences? = null
     @SuppressLint("ShowToast")
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,10 +65,18 @@ class NaoChatting : Activity(), OnClickListener {
 
         // 初始化合成对象
         mTts = SpeechSynthesizer.createSynthesizer(this@NaoChatting, mTtsInitListener)
-
         mToast = Toast.makeText(this@NaoChatting, "", Toast.LENGTH_SHORT)
-
         start_understander.setOnClickListener(this@NaoChatting)
+        mSharedPreferences = getSharedPreferences(ChatSetting.ChatSettingFragment.PREFER_NAME, Context.MODE_PRIVATE)
+        //初始化toolbar
+        toolbarTitle.text = getString(R.string.chattingTitle)
+        toolbar.inflateMenu(R.menu.toolbar_menu)
+        toolbar.setOnMenuItemClickListener {
+            when(it.itemId){
+                R.id.nao_setting -> startActivity<ChatSetting>()
+            }
+            true
+        }
     }
 
     override fun onClick(view: View?) {
@@ -249,13 +265,13 @@ class NaoChatting : Activity(), OnClickListener {
         // 根据合成引擎设置相应参数
         mTts!!.setParameter(SpeechConstant.ENGINE_TYPE, SpeechConstant.TYPE_CLOUD)
         // 设置在线合成发音人
-        mTts!!.setParameter(SpeechConstant.VOICE_NAME, "xiaowanzi")
+        mTts!!.setParameter(SpeechConstant.VOICE_NAME, mSharedPreferences!!.getString("voicer_preference","xiaoyan"))
         //设置合成语速
-        mTts!!.setParameter(SpeechConstant.SPEED, "50")
+        mTts!!.setParameter(SpeechConstant.SPEED, mSharedPreferences!!.getString("speed_preference", "50"))
         //设置合成音调
-        mTts!!.setParameter(SpeechConstant.PITCH, "50")
+        mTts!!.setParameter(SpeechConstant.PITCH, mSharedPreferences!!.getString("pitch_preference", "50"))
         //设置合成音量
-        mTts!!.setParameter(SpeechConstant.VOLUME, "50")
+        mTts!!.setParameter(SpeechConstant.VOLUME, mSharedPreferences!!.getString("volume_preference", "50"))
 
         //设置播放器音频流类型
         mTts!!.setParameter(SpeechConstant.STREAM_TYPE, "3")
@@ -304,7 +320,13 @@ class NaoChatting : Activity(), OnClickListener {
                             val answerModel = chatModel(answer,0)
                             chatDataList?.add(answerModel)
                             chattingView.adapter = NaoChatAdapter(chatDataList!!)
-                            start_tts_play(answer)
+                            if(mSharedPreferences!!.getBoolean("chat_switch_preference",true)){
+                                startSayLocal(answer)
+                                start_tts_play(answer)
+                            }
+                            else {
+                                startSay(answer)
+                            }
                         }
                     }
                 } catch (e: Throwable) {

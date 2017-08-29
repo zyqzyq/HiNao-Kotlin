@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人说的话"
+            android:key="nao_say_1"
+            android:defaultValue="@string/robotSayBtn1"
+            android:title="NAO SAY ONE"/>
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人说的话"
+            android:key="nao_say_2"
+            android:defaultValue="@string/robotSayBtn2"
+            android:title="NAO SAY TWO"/>
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人说的话"
+            android:key="nao_say_3"
+            android:defaultValue="@string/robotSayBtn3"
+            android:title="NAO SAY THREE"/>
+
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人回答的话"
+            android:key="nao_say_4"
+            android:defaultValue="@string/robotSayBtn4"
+            android:title="NAO ANSWER ONE"/>
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人回答的话"
+            android:key="nao_say_5"
+            android:defaultValue="@string/robotSayBtn5"
+            android:title="NAO ANSWER TWO"/>
+    <EditTextPreference
+            android:dialogTitle="在此输入机器人回答的话"
+            android:key="nao_say_6"
+            android:defaultValue="@string/robotSayBtn6"
+            android:title="NAO ANSWER THREE"/>
+
+</PreferenceScreen>

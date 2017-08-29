@@ -9,7 +9,7 @@ android {
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -33,13 +33,13 @@ dependencies {
     })
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     compile "org.jetbrains.anko:anko-commons:$anko_version"
-    compile 'com.android.support:appcompat-v7:26.+'
+    compile "com.android.support:appcompat-v7:$support_version"
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:26.+'
+    compile "com.android.support:design:$support_version"
     compile 'com.alibaba:fastjson:1.2.35'
     compile 'com.google.code.gson:gson:2.8.0'
-    compile 'com.android.support:support-v4:26.+'
-    compile 'com.android.support:support-vector-drawable:26.+'
+    compile "com.android.support:support-v4:$support_version"
+    compile "com.android.support:support-vector-drawable:$support_version"
     testCompile 'junit:junit:4.12'
 }
 repositories {

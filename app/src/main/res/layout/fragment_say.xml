@@ -5,7 +5,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:showDividers="middle">
-
+    <!--toolbar-->
+    <include layout="@layout/toolbar"/>
 
     <ScrollView
             android:layout_width="match_parent"
@@ -32,83 +33,47 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:id="@+id/robotSayText"
+                    android:textColorHint="@android:color/black"
                     android:hint="@string/defaultRobotSayText"/>
             <Button
-                    android:text="@string/robotSayTextView"
+                    android:text="@string/robotSayBtn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:id="@+id/robotSayBtn"
                     style="@style/button_style"/>
         </LinearLayout>
-        <Button
-                android:text="@string/robotSayBtn1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/robotSayBtn1"
-                style="@style/button_style"/>
-        <Button
-                android:text="@string/robotSayBtn2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/robotSayBtn2"
-                style="@style/button_style"/>
-        <Button
-                android:text="@string/robotSayBtn3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/robotSayBtn3"
-                style="@style/button_style"/>
+            <Button
+                    android:text="@string/robotSayBtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/robotSayBtn1"
+                    style="@style/button_style"/>
+            <Button
+                    android:text="@string/robotSayBtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/robotSayBtn2"
+                    style="@style/button_style"/>
+            <Button
+                    android:text="@string/robotSayBtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/robotSayBtn3"
+                    style="@style/button_style"/>
+            <Button
+                    android:text="@string/robotSayBtn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/robotSayBtn4"
+                    style="@style/button_style"/>
+            <Button
+                    android:text="@string/robotSayBtn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/robotSayBtn5"
+                    style="@style/button_style"/>
+            <Button
+                    android:text="@string/robotSayBtn6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/robotSayBtn6"
+                    style="@style/button_style"/>
     </LinearLayout>
-    </ScrollView>
-
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-        <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <TextView
-                    android:text="@string/robotAnswerTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/sayTextSize"
-                    android:gravity="center"/>
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:id="@+id/robotAnswerText"
-                        android:hint="@string/defaultRobotAnswerText"/>
-                <Button
-                        android:text="@string/robotAnswerTextView"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:id="@+id/robotAnswerBtn"
-                        style="@style/button_style"/>
-            </LinearLayout>
-            <Button
-                    android:text="@string/robotAnswerBtn1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/robotAnswerBtn1"
-                    style="@style/button_style"/>
-            <Button
-                    android:text="@string/robotAnswerBtn2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/robotAnswerBtn2"
-                    style="@style/button_style"/>
-            <Button
-                    android:text="@string/robotAnswerBtn3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/robotAnswerBtn3"
-                    style="@style/button_style"/>
-        </LinearLayout>
     </ScrollView>
 
     <TextView
@@ -122,7 +87,7 @@
             android:text="@string/startSpeech"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".3"
+            android:layout_weight=".2"
             style="@style/button_style"/>
 
 </LinearLayout>

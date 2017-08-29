@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Message
 import android.util.Log
+import com.zyqzyq.hinao.ui.App
+import com.zyqzyq.hinao.ui.activities.MainActivity
 import org.jetbrains.anko.bundleOf
 import java.io.IOException
 import java.net.*
@@ -17,16 +19,13 @@ public fun sendmsg(msg:String){
 
 class BroadCastUdp(val msg:String) :Thread(){
     var s: DatagramSocket? = null
-    companion object {
-        val server_ip = "255.255.255.255"
-        val server_port = 10024
-    }
+
     override  fun run() {
         send(msg)
         super.run()
     }
     fun send(message: String?){
-        var msg = message?:"Hello"
+        val msg = message?:"Hello"
         Log.d("UDP",msg)
         try {
             s = DatagramSocket()
@@ -35,12 +34,13 @@ class BroadCastUdp(val msg:String) :Thread(){
         }
         var local: InetAddress? = null
         try {
-            local = InetAddress.getByName(server_ip)
+            local = InetAddress.getByName(App.server_ip)
         } catch (e: UnknownHostException) {
             e.printStackTrace()
         }
-        val p = DatagramPacket(msg.toByteArray(), msg.length, local,
-                server_port)
+        val buf = msg.toByteArray()
+        val p = DatagramPacket(buf, buf.size, local,
+                App.server_port!!)
         try {
             s!!.send(p)
             s!!.close()
@@ -53,7 +53,6 @@ class BroadCastUdp(val msg:String) :Thread(){
 
 
 class UDPServer(mHandler: Handler):Runnable{
-    val server_port = 10024
     var result: String? = null
     val mHandler = mHandler
     @Throws(IOException::class)
@@ -61,13 +60,13 @@ class UDPServer(mHandler: Handler):Runnable{
 
         var socket: DatagramSocket? = null
         try {
-            socket = DatagramSocket(server_port)
+            socket = DatagramSocket(App.server_port!!)
         } catch (e: Exception) {
             e.printStackTrace()
         }
         getBehaviorList()
         while (true) {
-            val data = ByteArray(1024)
+            val data = ByteArray(10240)
             val packet = DatagramPacket(data, data.size)
             socket?.receive(packet)?:break
             result = String(packet.data, packet.offset, packet.length)

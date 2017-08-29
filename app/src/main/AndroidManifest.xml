@@ -29,7 +29,15 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activities.NaoSetting">
+        <activity android:name=".ui.activities.settings.MoveSetting"
+                  android:theme="@style/preferenceScreenTheme">
+        </activity>
+        <activity android:name=".ui.activities.settings.SaySetting"
+                  android:theme="@style/preferenceScreenTheme">
+        </activity>
+
+        <activity android:name=".ui.activities.settings.ChatSetting"
+                  android:theme="@style/preferenceScreenTheme">
         </activity>
         <activity android:name=".ui.activities.infomations.NaoInfoActivity">
         </activity>

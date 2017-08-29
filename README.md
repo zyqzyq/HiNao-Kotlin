@@ -11,6 +11,11 @@ XXXXXXX
     NAOServer:https://github.com/zyqzyq/HiNaoServer
     
 ##版本更新
+####1.0.1
+    1.增加IP,PORT设置选项
+    2.增加本地语音合成设置选项
+    3.增加对话本地播放选项
+    4.优化对话页面，删除了answer功能
 ####1.0.0
     1.方向键实现移动控制
     2.按钮控制快速run behavior

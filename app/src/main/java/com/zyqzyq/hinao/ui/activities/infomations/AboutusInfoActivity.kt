@@ -10,12 +10,11 @@ import kotlinx.android.synthetic.main.toolbar.*
 import kotlinx.android.synthetic.main.toolbar.view.*
 import org.jetbrains.anko.find
 
-class AboutusInfoActivity : AppCompatActivity() ,ToolbarManager{
-    override val toolbar by lazy { find<Toolbar>(R.id.toolbar) }
+class AboutusInfoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aboutus_info)
-        toolbarText.text = getString(R.string.aboutText)
+        toolbarTitle.text = getString(R.string.aboutText)
     }
 }

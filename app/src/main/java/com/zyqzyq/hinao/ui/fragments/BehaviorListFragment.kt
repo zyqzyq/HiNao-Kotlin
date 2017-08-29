@@ -30,11 +30,7 @@ class BehaviorListFragment : Fragment(){
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        val items = listOf("小苹果","骑马舞","上海舞","中国舞","摇摆舞","起来","蹲下 ",
-                "小苹果","骑马舞","上海舞","中国舞","摇摆舞","起来","蹲下 ",
-                "小苹果","骑马舞","上海舞","中国舞","摇摆舞","起来","蹲下 ",
-                "小苹果","骑马舞","上海舞","中国舞","摇摆舞","起来","蹲下 ",
-                "小苹果","骑马舞","上海舞","中国舞","摇摆舞","起来","蹲下 ")
+        val items = listOf("小苹果","骑马舞","上海舞")
         val adapter = BehaviorListAdapter(items)
         val mHandler = object : Handler() {
             override fun handleMessage(msg: Message) {

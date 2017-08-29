@@ -19,7 +19,7 @@ fun startSay(msg: String){
     sendmsg("02"+"01"+msg)
 }
 
-fun startAnswer(msg: String){
+fun startSayLocal(msg: String){
     //发送问题并调用机器人本地剧本进行回答
     sendmsg("02"+"02"+msg)
 }

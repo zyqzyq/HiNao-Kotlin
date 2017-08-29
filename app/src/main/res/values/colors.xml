@@ -6,6 +6,7 @@
     <color name="colorNavigation">#ffffff</color>
     <color name="colorControlNormal">#000000</color>
     <color name="colorWindowBg">#DDF0ED</color>
+    <color name="colorPreferenceBg">#DDF0ED</color>
     <color name="textColorPrimary">#000000</color>
     <color name="colorAccent">#FF4081</color>
 

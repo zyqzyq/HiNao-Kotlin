@@ -13,6 +13,6 @@ class DownloadInfoActivity : AppCompatActivity() ,ToolbarManager{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_download_info)
-        toolbarText.text = getString(R.string.downloadText)
+        toolbarTitle.text = getString(R.string.downloadText)
     }
 }

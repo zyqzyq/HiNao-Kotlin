@@ -11,6 +11,7 @@ import com.zyqzyq.hinao.ui.activities.infomations.AboutusInfoActivity
 import com.zyqzyq.hinao.ui.activities.infomations.DownloadInfoActivity
 import com.zyqzyq.hinao.ui.activities.infomations.NaoInfoActivity
 import kotlinx.android.synthetic.main.fragment_my.*
+import kotlinx.android.synthetic.main.toolbar.*
 import org.jetbrains.anko.startActivity
 
 
@@ -24,5 +25,8 @@ class MyFragment: Fragment(){
         aboutusBtn.setOnClickListener { activity.startActivity<AboutusInfoActivity>() }
         naoInfoBtn.setOnClickListener { activity.startActivity<NaoInfoActivity>() }
         downloadBtn.setOnClickListener { activity.startActivity<DownloadInfoActivity>() }
+
+        toolbarTitle.text = getString(R.string.title_my)
+
     }
 }

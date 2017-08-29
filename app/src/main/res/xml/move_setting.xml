@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+            android:dialogTitle="请输入IP地址"
+            android:key="ip_preference"
+            android:defaultValue="255.255.255.255"
+            android:background="@android:color/darker_gray"
+            android:title="NAO IP地址"
+            android:singleLine="true"/>
+    <EditTextPreference
+            android:dialogTitle="请输入端口地址"
+            android:key="port_preference"
+            android:defaultValue="10024"
+            android:title="NAO 端口地址" />
+    <EditTextPreference
+            android:dialogTitle="请输入速度(0-100)"
+            android:key="speed_preference"
+            android:defaultValue="50"
+            android:title="NAO 移动速度" />
+
+
+</PreferenceScreen>
